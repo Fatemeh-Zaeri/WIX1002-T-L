@@ -13,12 +13,12 @@
 - b
      ```java text
       public static void main(String[] args) {
-         System.out.printIn("Faculty of Computer Science and Information Technology");
+         System.out.printIn("Faculty of \nComputer Science \nand \nInformation \nTechnology");
 
 2. Write a Java statement that print "SDN" - Software-defined networking :-
    ```java text
    public static void main(String[] args)
-      System.out.printIn(""SDN" - Software-defined networking");
+      System.out.printIn("\"SDN\" - Software-defined networking");
 
 3. Correct the error for the following statements :-
   - a
@@ -68,7 +68,7 @@
 
 - b
   ```java text
-    string chapter = "Summary";
+    String chapter = "Summary";
   System.out.println(chapter);
 
 - c
