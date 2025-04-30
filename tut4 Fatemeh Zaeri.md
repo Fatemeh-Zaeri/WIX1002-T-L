@@ -1,75 +1,67 @@
-# WIA1002 Foundamental of programming         
-# Tutorial 5 Arrays Solutions
+# Tutorial 4 Assignment        
 
-Based on the WIX1002 Fundamentals of Programming Chapter 5 PPT, here are the solutions to the tutorial questions:
-
-## Question 1
-
-a. Declare an array that used to store 12 floating point numbers.
+1. :-
+- a Declare an array that used to store 12 floating point numbers.
 ```java
 float[] numbers = new float[12];
 ```
 
-b. Initialize an array that used to store the value of A to E.
+- b Initialize an array that used to store the value of A to E.
 ```java
 char[] letters = {'A', 'B', 'C', 'D', 'E'};
 ```
 
-c. Declare an array that used to store 100 students name.
+- c Declare an array that used to store 100 students name.
 ```java
 String[] studentNames = new String[100];
 ```
 
-d. Declare an array for a table with 6 rows 2 columns that used to store integer value.
+- d Declare an array for a table with 6 rows 2 columns that used to store integer value.
 ```java
 int[][] table = new int[6][2];
 ```
 
-e. Initialize an array with the given matrix value:
+- e
 ```java
 int[][] matrix = { {6, 9}, {2, 5}, {4, 6} };
 ```
 
-f. Modify the value of the above array:
+- f Modify the value of the above array:
 ```java
 matrix[1][1] = 4;
 matrix[2][0] = 3;
 matrix[2][1] = 7;
 ```
 
-g. Display all the values of an array named contact:
+- g Display all the values of an array named contact:
 ```java
 for (String name : contact) {
     System.out.println(name);
 }
 ```
 
-## Question 2
+2. Correct the error :-
 
-a. Error: Using single quotes for strings. Correction:
+- a
 ```java
 String[] code = {"AAA","AAB","AAC","AAD"};
 ```
 
-b. Errors: 
-- `new num[10]` should be `new int[10]`
-- `num.length()` should be `num.length`
-- `sum+=num` should be `sum+=num[k]`
-Correction:
+- b
 ```java
 int[] num = new int[10];
 for(int k=0; k<num.length; k++)
     sum+=num[k];
 ```
 
-c. Error: Array elements not initialized before assignment. Correction:
+- c
 ```java
 int [][]t = new int[3][];
 t[1] = new int[3]; // Assuming we want 3 columns
 t[1][2] = 5;
 ```
 
-d. Error: `score[++i]` when i=4 will try to access index 5 which is out of bounds (array size is 5). Correction:
+- d
 ```java
 int i=4;
 int []score = new int[5];
@@ -79,9 +71,7 @@ if (i < score.length-1) {
 }
 ```
 
-## Question 3
-
-Let's determine the values of each element of array marks step by step:
+3. Let's determine the values of each element of array marks step by step :-
 
 Initial array: `int[] marks = new int[5];` (all elements initialized to 0)
 
@@ -99,9 +89,7 @@ Final array values:
 - marks[3] = 31
 - marks[4] = 31
 
-## Question 4
-
-Count occurrences of "the" in a string array:
+4. Count occurrences of "the" in a string array :-
 ```java
 int count = 0;
 for (String s : sentence) {
@@ -112,9 +100,7 @@ for (String s : sentence) {
 System.out.println("Number of 'the' occurrences: " + count);
 ```
 
-## Question 5
-
-Display string array in reverse order with each string reversed:
+5. Display string array in reverse order with each string reversed :-
 ```java
 for (int i = sentence.length-1; i >= 0; i--) {
     String reversed = new StringBuilder(sentence[i]).reverse().toString();
@@ -122,9 +108,7 @@ for (int i = sentence.length-1; i >= 0; i--) {
 }
 ```
 
-## Question 6
-
-Generate random number, convert to binary and store in 8-bit array:
+6. Generate random number, convert to binary and store in 8-bit array :-
 ```java
 Random rand = new Random();
 int num = rand.nextInt(256); // 0-255
